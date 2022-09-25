@@ -1,26 +1,78 @@
-html,
+/* colors
+#AC3931 - sweet brown
+#E5D352 - arylide yellow
+#D9E76C - maximum green yellow
+#537D8D - teal blue
+#482C3D - dark byzantium
+*/
+
+
+/* TODO: grid layout with hero section, two columns for events and contact, and a footer with social links */
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Arvo', serif;
+    background-color: #AC3931;
+    color: black;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
 }
 
-* {
-  box-sizing: border-box;
+.title-primary {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 144px;
+    color: #E5D352;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 1px 2px #482C3D;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.title-secondary {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 60px;
+    color: #E5D352;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 1px 2px #482C3D;
+}
+
+#events {
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    width: 100%;
+    padding: 2.5%;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.event {
+    list-style-type: none;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.event-time {
+    margin-right: 10px;
+    justify-self: flex-end;
+}
+
+.event-venue {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Luckiest Guy', cursive;
+    color: #D9E76C;
+    text-shadow: 1px 1px 2px #482C3D;
+    justify-self: flex-start;
+}
+
+.event-venue:hover {
+    color:#537D8D;
 }
